@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://floridamusiclessons.com
+
+# Sitemaps
+Sitemap: https://floridamusiclessons.com/sitemap.xml
