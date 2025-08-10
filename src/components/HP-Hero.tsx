@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import GoogleReviewsCarousel from "@/components/GoogleReviewsCarousel";
-import { Booking } from "@/components/Booking";
 
 const reviews = [
   {
@@ -16,7 +15,7 @@ const reviews = [
   {
     author_name: "Omar Sanchez",
     rating: 5,
-    text: "I recently had the pleasure of taking guitar lessons with Daniel, and I can't recommend him enough! He is an excellent instructor—very patient and truly knows how to teach from a musician level. Very professional and kind.",
+    text: "I recently had the pleasure of taking guitar lessons with Daniel, and I can&apos;t recommend him enough! He is an excellent instructor—very patient and truly knows how to teach from a musician level. Very professional and kind.",
     time: "2025-05-15",
   },
   {

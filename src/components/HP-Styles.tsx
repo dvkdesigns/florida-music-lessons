@@ -8,10 +8,10 @@ export default function Styles() {
           Play the Styles You Love — Rock, Pop, Blues, Jazz & More
         </h2>
         <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-          Whether you're into blazing guitar solos, smooth vocal harmonies, or
-          tight funk grooves — Florida Music Lessons helps you master the styles
-          that move you. From Guitar, Bass, and Piano to Drums and Voice, your
-          music journey starts here.
+          Whether you&apos;re into blazing guitar solos, smooth vocal harmonies,
+          or tight funk grooves — Florida Music Lessons helps you master the
+          styles that move you. From Guitar, Bass, and Piano to Drums and Voice,
+          your music journey starts here.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -65,9 +65,9 @@ export default function Styles() {
               🎤 Country, Gospel & Worship
             </h3>
             <p>
-              Whether it's acoustic country, rich gospel harmonies, or uplifting
-              praise music — we'll help you play and sing with style and
-              authenticity.
+              Whether it&apos;s acoustic country, rich gospel harmonies, or
+              uplifting praise music — we&apos;ll help you play and sing with
+              style and authenticity.
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export default function Styles() {
             This is your musical journey — and it starts with style.
           </p>
           <p className="text-base mb-6 max-w-2xl mx-auto">
-            Whether you're a total beginner or ready to refine your sound,
+            Whether you&apos;re a total beginner or ready to refine your sound,
             Florida Music Lessons will help you play with confidence,
             creativity, and lifelong skill.
           </p>

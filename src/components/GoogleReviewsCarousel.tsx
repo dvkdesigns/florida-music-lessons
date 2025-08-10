@@ -17,11 +17,11 @@ export default function GoogleReviewsCarousel({
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (reviews.length === 0) return; // prevent interval when no reviews
+    if (reviews.length === 0) return;
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    }, 4000); // 4 seconds
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [reviews.length]);
@@ -29,7 +29,7 @@ export default function GoogleReviewsCarousel({
   if (reviews.length === 0) return null;
 
   return (
-    <div className="relative w-full max-w-xl  mb-10">
+    <div className="relative w-full max-w-xl mb-10">
       {reviews.map((review, index) => (
         <div
           key={index}
@@ -44,7 +44,7 @@ export default function GoogleReviewsCarousel({
                 <span key={i}>★</span>
               ))}
             </p>
-            <p className="text-gray-700 italic">"{review.text}"</p>
+            <p className="text-gray-700 italic">&quot;{review.text}&quot;</p>
           </div>
         </div>
       ))}

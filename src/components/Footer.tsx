@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
 import Image from "next/image";
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center footer">

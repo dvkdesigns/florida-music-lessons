@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link"; // ✅ added
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Navigation } from "@/components/Navigation";
@@ -17,14 +18,14 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/">
+            <Link href="/" className="inline-block">
               <Image
                 src="/images/logo.png"
                 alt="Florida Music Lessons Logo"
                 width={150}
                 height={80}
               />
-            </a>
+            </Link>
           </div>
 
           {/* Contact and Social */}
@@ -109,9 +110,9 @@ export default function Header() {
         </div>
 
         {/* Navigation */}
-        <div
-          className={`md:block ${menuOpen ? "block" : "hidden"} mt-2 `}
-        ></div>
+        <div className={`md:block ${menuOpen ? "block" : "hidden"} mt-2 `}>
+          <Navigation />
+        </div>
       </div>
     </header>
   );

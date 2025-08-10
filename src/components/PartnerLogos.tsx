@@ -24,7 +24,7 @@ export default function PartnerLogos() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {partners.map((partner, index) => (
           <div key={index} className="flex flex-col items-center">
-            <a href={partner.link} targert="_blank" className="text-center">
+            <a href={partner.link} target="_blank" className="text-center">
               <div className="w-32 h-32 relative items-center">
                 <Image
                   src={partner.image}

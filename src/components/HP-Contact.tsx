@@ -10,7 +10,7 @@ export default function Contact() {
             Let’s Get in Touch
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Whether you're ready to book your first lesson or just have a
+            Whether you&apos;re ready to book your first lesson or just have a
             question about our programs, we’re here to help. We primarily offer
             **in-home music lessons** and serve families throughout{" "}
             <a href="parklandguitarlessons.com">Parkland</a>,

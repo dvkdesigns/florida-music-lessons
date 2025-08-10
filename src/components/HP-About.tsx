@@ -21,7 +21,7 @@ export default function HPAbout() {
           <div>
             <h3 className="text-xl font-semibold mb-2">
               🎓{" "}
-              <Link href="/teachers" className="text-blue-600 hover:underline">
+              <Link href="#" className="text-blue-600 hover:underline">
                 Teachers
               </Link>
             </h3>
@@ -97,8 +97,8 @@ export default function HPAbout() {
               </Link>
             </h3>
             <p className="text-gray-700">
-              We're always looking for great instructors. Join our team and make
-              a difference through music.
+              We&apos;re always looking for great instructors. Join our team and
+              make a difference through music.
             </p>
           </div>
 
