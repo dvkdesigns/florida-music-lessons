@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import Hero from "@/components/HP-Hero";
 import Instruments from "@/components/HP-Instruments";
 import Styles from "@/components/HP-Styles";

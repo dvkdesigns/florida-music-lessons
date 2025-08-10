@@ -2,10 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { Navigation } from "@/components/Navigation";
-import StudentPortalButton from "@/components/StudentPortalButton";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
