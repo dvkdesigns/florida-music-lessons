@@ -20,8 +20,7 @@ export default function FAQ() {
               Do you offer in-home lessons?
             </h3>
             <p className="text-gray-700 mt-2">
-              Yes! In-home lessons are our specialty. We come to you, making
-              music education convenient and comfortable.
+              No! In-home lessons are no longer available.
             </p>
           </div>
 
