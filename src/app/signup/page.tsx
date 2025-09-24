@@ -1,6 +1,4 @@
 import React from "react";
-import Head from "next/head";
-import Contact from "@/components/ContactForm";
 import FAQ from "@/components/FAQs";
 import "@/components/hide-header.css";
 import Script from "next/script";
