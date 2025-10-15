@@ -2,10 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link"; // ✅ added
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Navigation } from "@/components/Navigation";
 import StudentPortalButton from "@/components/StudentPortalButton";
 
 export default function Header() {
@@ -28,7 +27,7 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Contact and Social */}
+          {/* Contact + Social + Address */}
           <div className="hidden md:block text-right">
             <p className="text-sm">
               Call:{" "}
@@ -45,6 +44,21 @@ export default function Header() {
                 info@floridamusiclessons.com
               </a>
             </p>
+
+            {/* Address with Map Icon */}
+            <p className="text-sm mt-1 flex justify-end items-center space-x-1">
+              <FaMapMarkerAlt className="text-red-500" />
+              <a
+                href="https://maps.app.goo.gl/UyYCvZh3tU22jX5u5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-blue-600 transition-colors"
+              >
+                7837 West Sample Rd, Coral Springs, FL 33065
+              </a>
+            </p>
+
+            {/* Social Icons */}
             <div className="Social-Icons flex justify-end space-x-3 mt-1 items-center">
               <a
                 href="https://facebook.com/floridamusiclessons"
@@ -90,6 +104,20 @@ export default function Header() {
               info@floridamusiclessons.com
             </a>
           </p>
+
+          {/* Mobile Address */}
+          <p className="text-sm mt-1 flex justify-center items-center space-x-1">
+            <FaMapMarkerAlt className="text-red-500" />
+            <a
+              href="https://www.google.com/maps/place/Florida+Music+Lessons/@26.2726098,-80.268944,15z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
+            >
+              7351 Wiles Rd, Coral Springs, FL
+            </a>
+          </p>
+
           <div className="Social-Icons flex justify-center space-x-3 mt-1 items-center">
             <a
               href="https://facebook.com/floridamusiclessons"
@@ -107,11 +135,6 @@ export default function Header() {
             </a>
             <StudentPortalButton />
           </div>
-        </div>
-
-        {/* Navigation */}
-        <div className={`md:block ${menuOpen ? "block" : "hidden"} mt-2 `}>
-          <Navigation />
         </div>
       </div>
     </header>

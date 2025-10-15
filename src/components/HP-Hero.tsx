@@ -30,19 +30,19 @@ const reviews = [
 export default function Hero() {
   return (
     <section className="bg-white pb-12 max-w-7xl mx-auto mb-42">
-      <div className="container mx-auto flex flex-col md:flex-row">
+      <div className="container mx-auto flex flex-col md:flex-row pb-10">
         {/* Left Side: Text */}
-        <div className="md:w-1/2 pl-4 pt-20">
+        <div className="md:w-1/2 pl-4 pt-5 pb-20">
           <h1 className="text-4xl font-bold mb-4">
             <small className="text-orange-600 text-sm">Welcome To</small>
             <br /> Florida Music Lessons
           </h1>
           <h2 className="text-xl text-gray-700 mb-4">
-            One on One Lessons in the comfort of your home.
+            One on One Lessons in our Studio in Coral Springs, Fl.
           </h2>
           <p className="text-gray-600">
             Learn guitar, bass, piano, voice, drums, and more with private music
-            lessons right in your home. Our experienced teachers come to you,
+            lessons right in our studio. Our experienced teachers come to you,
             making it easy and comfortable to start learning today.
           </p>
           <div className="mt-6">
@@ -53,7 +53,7 @@ export default function Hero() {
             </a>
           </div>
           {/* Google Reviews Carousel */}
-          <div className="mt-8">
+          <div className="mt-8 visible md:invisible">
             <GoogleReviewsCarousel reviews={reviews} />
           </div>
         </div>

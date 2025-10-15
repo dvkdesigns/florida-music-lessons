@@ -10,7 +10,7 @@ export default function Instruments() {
         <div className="flex flex-col items-center text-center">
           <h2 className="text-xl font-bold mt-2">Guitar Lessons</h2>
 
-          <Link href="/your-target-page" passHref>
+          <Link href="/" passHref>
             <Image
               className="dark:invert"
               src="/images/electric.png"
@@ -48,7 +48,7 @@ export default function Instruments() {
         <div className="flex flex-col items-center text-center">
           <h2 className="text-xl font-bold mt-2">Piano Lessons</h2>
 
-          <Link href="/your-target-page" passHref>
+          <Link href="/" passHref>
             <Image
               className="dark:invert"
               src="/images/piano-2.png"
@@ -69,7 +69,7 @@ export default function Instruments() {
         <div className="flex flex-col items-center text-center">
           <h2 className="text-xl font-bold mt-2">Voice Lessons</h2>
 
-          <Link href="/your-target-page" passHref>
+          <Link href="/" passHref>
             <Image
               className="dark:invert"
               src="/images/voice.png"
@@ -89,7 +89,7 @@ export default function Instruments() {
           <div className="flex flex-col items-center text-center">
             <h2 className="text-xl font-bold mt-2">Drum Lessons</h2>
 
-            <Link href="/your-target-page" passHref>
+            <Link href="/" passHref>
               <Image
                 className="dark:invert"
                 src="/images/drums.png"
@@ -110,7 +110,7 @@ export default function Instruments() {
           <div className="flex flex-col items-center text-center">
             <h2 className="text-xl font-bold mt-2">Group Classes</h2>
 
-            <Link href="/your-target-page" passHref>
+            <Link href="/" passHref>
               <Image
                 className="dark:invert"
                 src="/images/drums.png"
