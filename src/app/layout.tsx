@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -14,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://floridamusiclessons.com"), // ← update if different
+  metadataBase: new URL("https://floridamusiclessons.com"),
   title: {
     default: "Florida Music Lessons",
     template: "%s | Florida Music Lessons",
   },
   description:
-    "In-home and in-studio music lessons in Coral Springs, FL. Guitar, piano, bass, drums, and voice lessons for kids and adults.",
+    "In-studio music lessons in Coral Springs, FL. Guitar, piano, bass, drums, and voice lessons for kids and adults.",
   robots: {
     index: true,
     follow: true,
@@ -37,11 +38,26 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17673347679"
+        />
+        <Script id="google-ads-tag">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17673347679');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
