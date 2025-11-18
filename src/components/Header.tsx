@@ -11,7 +11,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full py-2 bg-white shadow">
+    <header className="w-full py-3 bg-white max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
         {/* Top Row: Logo and Contact */}
         <div className="flex justify-between items-center">
@@ -21,7 +21,7 @@ export default function Header() {
               <Image
                 src="/images/logo.png"
                 alt="Florida Music Lessons Logo"
-                width={150}
+                width={400}
                 height={80}
               />
             </Link>
@@ -29,32 +29,13 @@ export default function Header() {
 
           {/* Contact + Social + Address */}
           <div className="hidden md:block text-right">
-            <p className="text-sm">
-              Call:{" "}
-              <a href="tel:954-249-8837" className="text-blue-600">
+            <p className="">
+              Call/Text:{" "}
+              <a
+                href="tel:954-249-8837"
+                className="text-orange-600 text-3xl font-bold"
+              >
                 954-249-8837
-              </a>
-            </p>
-            <p className="text-sm">
-              Email:{" "}
-              <a
-                href="mailto:info@floridamusiclessons.com"
-                className="text-blue-600"
-              >
-                info@floridamusiclessons.com
-              </a>
-            </p>
-
-            {/* Address with Map Icon */}
-            <p className="text-sm mt-1 flex justify-end items-center space-x-1">
-              <FaMapMarkerAlt className="text-red-500" />
-              <a
-                href="https://maps.app.goo.gl/UyYCvZh3tU22jX5u5"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                7837 West Sample Rd, Coral Springs, FL 33065
               </a>
             </p>
 
@@ -91,7 +72,7 @@ export default function Header() {
         <div className="block md:hidden mt-2 text-center">
           <p className="text-sm">
             Call:{" "}
-            <a href="tel:954-249-8837" className="text-blue-600">
+            <a href="tel:954-249-8837" className="text-orange-600 no-underline">
               954-249-8837
             </a>
           </p>
@@ -114,7 +95,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
-              7837 W Sample Rd, Coral Springs, FL
+              9752 W Sample Rd, Coral Springs, FL
             </a>
           </p>
 

@@ -1,131 +1,56 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Instruments() {
   return (
-    <section className="bg-white pb-12 max-w-7xl mx-auto">
-      <div className="flex flex-col gap-4 sm:items-center sm:flex-row sm:justify-center sm:gap-2 sm:gap-x-4">
-        <div className="flex flex-col items-center text-center">
-          <h2 className="text-xl font-bold mt-2">Guitar Lessons</h2>
-
-          <Link href="/" passHref>
-            <Image
-              className="dark:invert"
-              src="/images/electric.png"
-              alt="Electric Guitar"
-              width={350}
-              height={38}
-              priority
-            />
-          </Link>
-
-          <p className="text-gray-600 max-w-sm">
-            Learn rock, blues, and metal techniques with our expert teachers.
-            Click the image to explore electric guitar lessons.
-          </p>
+    <section className="bg-white  max-w-6xl mx-auto ">
+      <div className="container mx-auto flex flex-col md:flex-row">
+        {/* Right Side: Floating Image */}
+        <div className="md:w-1/3 relative md:mt-0">
+          <Card className="shadow-none bg-transparent p-0 m-0 h-0 border-0">
+            <CardContent className="px-0 flex items-end">
+              <div className="relative w-full h-60  ">
+                <Image
+                  src="/images/acoustic.png"
+                  alt="Floating isolated graphic"
+                  fill
+                  className=""
+                />
+              </div>
+            </CardContent>
+          </Card>
         </div>
-        <div className="flex flex-col items-center text-center">
-          <h2 className="text-xl font-bold mt-2">Bass Lessons</h2>
-
-          <Link href="#" passHref>
-            <Image
-              className="dark:invert"
-              src="/images/bass.png"
-              alt="Electric Guitar"
-              width={350}
-              height={38}
-              priority
-            />
-          </Link>
-
-          <p className="text-gray-600 max-w-sm">
-            Learn rock, blues, and metal techniques with our expert teachers.
-            Click the image to explore electric guitar lessons.
-          </p>
-        </div>
-        <div className="flex flex-col items-center text-center">
-          <h2 className="text-xl font-bold mt-2">Piano Lessons</h2>
-
-          <Link href="/" passHref>
-            <Image
-              className="dark:invert"
-              src="/images/piano-2.png"
-              alt="Electric Guitar"
-              width={350}
-              height={38}
-              priority
-            />
-          </Link>
-
-          <p className="text-gray-600 max-w-sm">
-            Learn rock, blues, and metal techniques with our expert teachers.
-            Click the image to explore electric guitar lessons.
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-col gap-4 sm:items-center sm:flex-row sm:justify-center sm:gap-2 sm:gap-x-4 m-auto">
-        <div className="flex flex-col items-center text-center">
-          <h2 className="text-xl font-bold mt-2">Voice Lessons</h2>
-
-          <Link href="/" passHref>
-            <Image
-              className="dark:invert"
-              src="/images/voice.png"
-              alt="Electric Guitar"
-              width={350}
-              height={38}
-              priority
-            />
-          </Link>
-
-          <p className="text-gray-600 max-w-sm">
-            Learn rock, blues, and metal techniques with our expert teachers.
-            Click the image to explore electric guitar lessons.
-          </p>
-        </div>
-        <div className="flex flex-col items-center text-center">
-          <div className="flex flex-col items-center text-center">
-            <h2 className="text-xl font-bold mt-2">Drum Lessons</h2>
-
-            <Link href="/" passHref>
-              <Image
-                className="dark:invert"
-                src="/images/drums.png"
-                alt="Electric Guitar"
-                width={350}
-                height={38}
-                priority
-              />
-            </Link>
-
-            <p className="text-gray-600 max-w-sm">
-              Learn rock, blues, and metal techniques with our expert teachers.
-              Click the image to explore electric guitar lessons.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col items-center text-center">
-          <div className="flex flex-col items-center text-center">
-            <h2 className="text-xl font-bold mt-2">Group Classes</h2>
-
-            <Link href="/" passHref>
-              <Image
-                className="dark:invert"
-                src="/images/drums.png"
-                alt="Electric Guitar"
-                width={350}
-                height={38}
-                priority
-              />
-            </Link>
-
-            <p className="text-gray-600 max-w-sm">
-              Learn rock, blues, and metal techniques with our expert teachers.
-              Click the image to explore electric guitar lessons.
-            </p>
-          </div>
+        {/* Left Side: Text */}
+        <div className="md:w-2/3 pl-4">
+          <section className="">
+            <h2 className="text-2xl font-semibold text-white bg-orange-600 py-2 px-4 mb-5">
+              Learn, play, and create with us:
+            </h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <div>
+                <strong>Guitar &amp; Bass</strong> &mdash; Learn songs you love
+                and develop stage-ready confidence.
+              </div>
+              <div>
+                <strong>Piano &amp; Keys</strong> &mdash; Explore melody,
+                harmony, and improvisation across genres.
+              </div>
+              <div>
+                <strong>Drums &amp; Percussion</strong> &mdash; Full kit, hand
+                drum, and rhythm-based lessons for all skill levels.
+              </div>
+              <div>
+                <strong>Voice</strong> &mdash; Build range, control, and
+                performance presence.
+              </div>
+              <div>
+                <strong>Mandolin, Ukulele &amp; More</strong> &mdash; Learn
+                unique instruments that inspire creativity.
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </section>

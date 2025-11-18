@@ -4,6 +4,7 @@ import Script from "next/script";
 
 import Hero from "@/components/HP-Hero";
 import Instruments from "@/components/HP-Instruments";
+import Beyond from "@/components/HP-Beyond";
 import Styles from "@/components/HP-Styles";
 import Pricing from "@/components/HP-Pricing";
 import Contact from "@/components/HP-Contact";
@@ -220,11 +221,12 @@ export default function Home() {
       />
 
       {/* Page */}
-      <div className="wrapper grid grid-rows-[20px_1fr_20px] justify-items-center min-h-screen px-8 gap-2 font-[family-name:var(--font-geist-sans)]">
+      <div className="wrapper grid  justify-items-center min-h-screen px-8  font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-[32px] row-start-2 sm:items-start">
           <Hero />
           <Instruments />
-          <Styles />
+          <Beyond />
+
           <Pricing />
           <Contact />
           <FAQs />
