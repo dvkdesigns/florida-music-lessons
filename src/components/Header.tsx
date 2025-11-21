@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import StudentPortalButton from "@/components/StudentPortalButton";
+import { Navigation } from "@/components/Navigation";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -117,6 +118,8 @@ export default function Header() {
             <StudentPortalButton />
           </div>
         </div>
+
+        <Navigation />
       </div>
     </header>
   );

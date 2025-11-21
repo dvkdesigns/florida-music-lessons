@@ -14,7 +14,7 @@ import Image from "next/image";
 export function Navigation() {
   return (
     <NavigationMenu>
-      <NavigationMenuList className="block md:flex">
+      <NavigationMenuList className="block md:flex py-5">
         {/* Instruments */}
         <NavigationMenuItem>
           <NavigationMenuTrigger>Instruments</NavigationMenuTrigger>
@@ -79,68 +79,13 @@ export function Navigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        {/* Styles */}
+        {/* About */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Styles</NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-white p-4 w-full min-w-[300px] md:min-w-[600px] lg:min-w-[1000]">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
-              {[
-                {
-                  href: "/styles/",
-                  name: "All Styles",
-                  desc: "Learn classic and modern rock styles.",
-                  img: "/images/rock.png",
-                },
-                {
-                  href: "/styles/rock",
-                  name: "Rock",
-                  desc: "Learn classic and modern rock styles.",
-                  img: "/images/rock.png",
-                },
-                {
-                  href: "/styles/latin",
-                  name: "Latin",
-                  desc: "Latin chords, improvisation & standards.",
-                  img: "/images/latin.png",
-                },
-                {
-                  href: "/styles/blues",
-                  name: "Blues",
-                  desc: "12-bar blues and blues soloing.",
-                  img: "/images/blues.png",
-                },
-                {
-                  href: "/styles/pop",
-                  name: "Pop",
-                  desc: "Play your favorite pop songs easily.",
-                  img: "/images/pop.png",
-                },
-                {
-                  href: "/styles/country",
-                  name: "Country",
-                  desc: "Fingerstyle and country technique.",
-                  img: "/images/country.png",
-                },
-              ].map((item) => (
-                <NavigationMenuLink asChild key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="block rounded hover:bg-gray-100 p-2 transition"
-                  >
-                    <Image
-                      src={item.img}
-                      alt={item.name}
-                      width={400}
-                      height={250}
-                      className="rounded mb-2 object-cover w-full h-40"
-                    />
-                    <h3 className="text-lg font-semibold">{item.name}</h3>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
-                  </Link>
-                </NavigationMenuLink>
-              ))}
-            </div>
-          </NavigationMenuContent>
+          <NavigationMenuLink asChild>
+            <Link href="/workshops" className="px-4 py-2 block">
+              Workshops
+            </Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
 
         {/* About */}

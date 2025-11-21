@@ -3,29 +3,6 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import GoogleReviewsCarousel from "@/components/GoogleReviewsCarousel";
-
-const reviews = [
-  {
-    author_name: "Tony Aguilar",
-    rating: 5,
-    text: "Fantastic lessons, Dan made it easy too understand and great insights to techniques, highly recommend!",
-    time: "2025-06-01",
-  },
-  {
-    author_name: "Omar Sanchez",
-    rating: 5,
-    text: "I recently had the pleasure of taking guitar lessons with Daniel, and I can&apos;t recommend him enough! He is an excellent instructor—very patient and truly knows how to teach from a musician level. Very professional and kind.",
-    time: "2025-05-15",
-  },
-  {
-    author_name: "Litza Cardoso",
-    rating: 5,
-    text: "Best Guitar teacher!!!",
-    time: "2025-04-28",
-  },
-  // Add more reviews as needed
-];
 
 export default function Hero() {
   return (

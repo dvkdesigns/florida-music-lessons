@@ -5,7 +5,7 @@ import Script from "next/script";
 import Hero from "@/components/HP-Hero";
 import Instruments from "@/components/HP-Instruments";
 import Beyond from "@/components/HP-Beyond";
-import Styles from "@/components/HP-Styles";
+
 import Pricing from "@/components/HP-Pricing";
 import Contact from "@/components/HP-Contact";
 import FAQs from "@/components/HP-FAQ";
