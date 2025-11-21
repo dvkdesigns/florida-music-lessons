@@ -15,7 +15,7 @@ export function Navigation() {
   return (
     <NavigationMenu>
       <NavigationMenuList className="block md:flex py-5">
-        {/* Instruments */}
+        {/* Instruments 
         <NavigationMenuItem>
           <NavigationMenuTrigger>Instruments</NavigationMenuTrigger>
           <NavigationMenuContent className="bg-white p-4 w-full min-w-[300px] md:min-w-[600px] lg:min-w-[1000]">
@@ -77,7 +77,7 @@ export function Navigation() {
               ))}
             </div>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem>*/}
 
         {/* About */}
         <NavigationMenuItem>
@@ -115,7 +115,7 @@ export function Navigation() {
           </NavigationMenuLink>
         </NavigationMenuItem>
 
-        {/* More */}
+        {/* More 
         <NavigationMenuItem>
           <NavigationMenuTrigger>About</NavigationMenuTrigger>
           <NavigationMenuContent className="bg-white p-4 w-full min-w-[300px] md:min-w-[600px] lg:min-w-[1000]">
@@ -171,7 +171,7 @@ export function Navigation() {
               ))}
             </div>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem>*/}
       </NavigationMenuList>
     </NavigationMenu>
   );
