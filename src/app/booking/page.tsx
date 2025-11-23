@@ -11,7 +11,7 @@ export default function BookingPage() {
       <main className="bg-white min-h-screen">
         <div className="py-12">
           <Script
-            src="https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9yZlBKViIsIldlYnNpdGVJRCI6Indic19kcTVKSyIsIldlYnNpdGVCbG9ja0lEIjoid2JiX1FodlNKeiJ9"
+            src="https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9yZlBKViIsIldlYnNpdGVJRCI6Indic19kcTVKSyIsIldlYnNpdGVCbG9ja0lEIjoid2JiX1FUQ2NKOSJ9"
             strategy="afterInteractive"
           />
         </div>
