@@ -1,0 +1,4 @@
+/* Only when this page is rendered, hide the global .footer */
+.footer {
+  display: none !important;
+}
