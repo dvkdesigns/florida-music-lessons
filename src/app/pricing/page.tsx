@@ -16,15 +16,7 @@ export default function PricingPage() {
         { time: "1 Hour", price: "$65" },
       ],
     },
-    {
-      type: "In-Home Lessons",
-      details:
-        "We come to you for the convenience of learning at home. Travel fees may apply based on distance.",
-      rates: [
-        { time: "30 Minutes", price: "$55" },
-        { time: "1 Hour", price: "$75" },
-      ],
-    },
+
     {
       type: "Virtual Lessons",
       details:

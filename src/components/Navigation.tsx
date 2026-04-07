@@ -76,24 +76,6 @@ export function Navigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>*/}
 
-        {/* About */}
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link href="/workshops" className="px-4 py-2 block">
-              Workshops
-            </Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-
-        {/* About */}
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link href="/pricing" className="px-4 py-2 block">
-              Pricing
-            </Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-
         {/* Contact */}
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
