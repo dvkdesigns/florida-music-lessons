@@ -46,10 +46,10 @@ export default function Contact() {
               <p className="text-gray-700">
                 📞{" "}
                 <a
-                  href="tel:954-867-9023"
+                  href="tel:954-249-8837"
                   className="text-blue-600 hover:underline"
                 >
-                  954-867-9023
+                  954-249-8837
                 </a>
                 <br />
                 ✉️{" "}

@@ -40,6 +40,15 @@ export default function ContactForm() {
         required
         className="w-full border p-2 rounded"
       />
+      <input
+        name="phone"
+        type="tel"
+        placeholder="Your phone number"
+        required
+        pattern="[0-9()+\-\s]{10,}"
+        title="Please enter a valid phone number"
+        className="w-full border p-2 rounded"
+      />
       <textarea
         name="message"
         placeholder="Your message"
