@@ -64,9 +64,7 @@ export default function Header() {
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden text-3xl text-gray-700"
-          >
-            <GiHamburgerMenu />
-          </button>
+          ></button>
         </div>
 
         {/* Contact Info below logo on mobile */}
@@ -118,8 +116,6 @@ export default function Header() {
             <StudentPortalButton />
           </div>
         </div>
-
-        <Navigation />
       </div>
     </header>
   );

@@ -26,7 +26,7 @@ export default function FAQsPage() {
     {
       question: "How much do lessons cost?",
       answer:
-        "Our standard rates are $45 for 30 minutes and $65 for 1 hour in-studio. In-home lessons have a small additional fee for travel.",
+        "Our standard rates are $45 for 30 minutes and $80 for 1 hour in-studio. In-home lessons have a small additional fee for travel.",
     },
     {
       question: "Do I need my own instrument?",

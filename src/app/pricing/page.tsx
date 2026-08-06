@@ -13,7 +13,7 @@ export default function PricingPage() {
       details: "One-on-one private lessons at our Coral Springs studio.",
       rates: [
         { time: "30 Minutes", price: "$45" },
-        { time: "1 Hour", price: "$65" },
+        { time: "1 Hour", price: "$80" },
       ],
     },
 
